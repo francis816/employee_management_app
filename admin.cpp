@@ -115,7 +115,8 @@ void Admin::addEmployee()
 			std::cin >> id;
 
 			std::cout << "Please enter " << i + 1 << ". employee Name: \n";
-			std::cin >> name;
+			std::cin.ignore(); // skip \n (enter key) from cin >> id;
+			std::getline(std::cin, name);
 
 			std::cout << "Please select employee position: \n";
 			std::cout << "1. Associate\n";
