@@ -9,50 +9,24 @@ class Admin
 {
 public:
 	Admin();
-
+	~Admin();
 	void showMenu();
-
-	void exitSystem();
-
-
-
-
-	int m_totalEmployeeNumber;
-	Employee** m_employeeArray;
-
+	void exitSystem()
 	void addEmployee();
-
 	void save();
-	
-	bool m_fileEmpty;
-
 	int getCurrentEmployeeNum(); 
-
 	void initializeEmployee();
-
-
-
-
 	void showEmployee();
-
-
-
 	void deleteEmployee();
 	int locateEmployee(int id);
-
-
 	void modifyEmployee();
-
-
 	void searchEmployee();
-
 	void sortEmployee();
-
-
 	void clearAllEmployee();
-
-
-	~Admin();
+	
+	bool m_fileEmpty;
+	int m_totalEmployeeNumber;
+	Employee** m_employeeArray;
 };
 
 
