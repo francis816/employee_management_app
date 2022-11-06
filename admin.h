@@ -11,7 +11,7 @@ public:
 	Admin();
 	~Admin();
 	void showMenu();
-	void exitSystem()
+	void exitSystem();
 	void addEmployee();
 	void save();
 	int getCurrentEmployeeNum(); 
